@@ -62,3 +62,49 @@ post.body = `
 console.log(post.toString());
 console.log(post.synopsis);
 console.log(post.body);
+
+const shoppingBasket = [
+  {
+    name: 'Pasta',
+    quantity: 2
+  },
+  {
+    name: 'Pesto',
+    quantity: 3
+  },
+  {
+    name: 'Chicken',
+    quantity: 1
+  },
+  {
+    name: 'Cheese',
+    quantity: 1
+  }
+];
+
+let output = '';
+for (let item of shoppingBasket) {
+  output += `\n${item.name} => quantity: ${item.quantity}`;
+}
+console.log(output);
+
+output = '';
+shoppingBasket.forEach((item) => {
+  output += `\n${item.name} => quantity: ${item.quantity}`;
+});
+console.log(output);
+
+output = shoppingBasket.map((item) => `${item.name} => quantity: ${item.quantity}`).join('\n');
+console.log(output);
+
+// Search in an array of object
+let indexOfObjectInShoppingBasket = shoppingBasket.findIndex((item) => {
+  return item.name.indexOf('C') !== -1;
+});
+let itemInShoppingBasket = shoppingBasket[indexOfObjectInShoppingBasket];
+console.log(`${itemInShoppingBasket.name}`);
+itemInShoppingBasket = shoppingBasket.find((item) => item.quantity === 3);
+console.log(`${itemInShoppingBasket.name}`);
+
+const filteredShoppingBasket = shoppingBasket.filter((item) => item.quantity === 1);
+console.log(filteredShoppingBasket);
