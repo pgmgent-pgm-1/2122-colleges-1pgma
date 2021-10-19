@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ff0000;
+
+  text-indent: -999em;
+  margin: 1em;
+  position: relative;
+  transition: all 268ms ease-in-out 0s;
+}
+.box:nth-of-type(2n) {
+  background: #ff00ff;
+}
+.box:nth-of-type(3n) {
+  background: #0000ff;
+}
+.box:hover {
+  transform: scale(2);
+  cursor: pointer;
+}

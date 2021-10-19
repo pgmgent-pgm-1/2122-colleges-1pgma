@@ -34,4 +34,33 @@
   for (let elem of allArticleElements) {
     elem.innerHTML = '<p>Epsilon</p>'
   }
+
+  // Manipulation
+  const lineupElement = document.getElementById('lineup');
+  let concertElement = document.createElement('article');
+  concertElement.classList.add('concert');
+  concertElement.innerHTML = '<h1>Rage Against The Machine</h1>';
+  // let hElement = document.createElement('h1');
+  // const hElementText = document.createTextNode('Rage Against The Machine');
+  // hElement.appendChild(hElementText);
+  // concertElement.appendChild(hElement);
+  lineupElement.appendChild(concertElement);
+
+  // Less Code
+  lineupElement.innerHTML = `
+    <article class="concert">
+      <h1>Rage Against The Machine</h1>
+    </article>
+  `;
+
+  // 1. Select the boxes element
+  const boxesElement = document.querySelector('.boxes');
+  // 2. Temporary String
+  let output = '';
+  // 3. Loop
+  for (let i = 0; i < 100; i++) {
+    output += `<div class="box">BOX</div>`;
+  }
+  // 4. Assign output to element via innerHTML propery
+  boxesElement.innerHTML = output;
 })();
