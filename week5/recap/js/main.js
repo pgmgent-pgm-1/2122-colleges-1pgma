@@ -34,7 +34,11 @@
       for (let concert of lineup) {
         outputStr += `
         <div class="concert">
-           <h2>${concert.bandName}</h2>
+          <h2 class="band">${concert.bandName}</h2>
+          <picture class="picture">
+            <img src="${concert.thumbnailUrl}">
+          </picture>
+          <div class="playday">${concert.playDay}</div>
         </div>
         `;
       }
