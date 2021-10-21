@@ -58,7 +58,7 @@
   // 2. Temporary String
   let output = '';
   // 3. Loop
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 1000; i++) {
     output += `<div class="box">BOX</div>`;
   }
   // 4. Assign output to element via innerHTML propery

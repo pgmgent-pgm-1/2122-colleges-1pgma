@@ -13,13 +13,13 @@
 }
 
 .box {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 0%;
   background: #ff0000;
 
   text-indent: -999em;
-  margin: 1em;
+  margin: 2px;
   position: relative;
   transition: all 268ms ease-in-out 0s;
 }
@@ -30,6 +30,7 @@
   background: #0000ff;
 }
 .box:hover {
-  transform: scale(2);
+  background: #000000;
+  transform: rotate(30deg) scale(2);
   cursor: pointer;
 }
