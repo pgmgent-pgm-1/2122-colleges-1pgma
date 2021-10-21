@@ -34,6 +34,8 @@
       // Get the node or element via querySelector with certain selectors
       this.lineupElement = document.querySelector('.lineup');
       console.log(this.lineupElement);
+      this.digitalClockElement = document.querySelector('.digital-clock');
+      console.log(this.digitalClockElement);
       // Call the function generateUI
       this.generateUI();
     },
@@ -58,6 +60,13 @@
         `;
       }
       this.lineupElement.innerHTML = outputStr;
+      
+      // Generate Digital Clock
+      setInterval(() => {
+        // Make a new instance of Date object
+        const currentDate = new Date();
+        this.digitalClockElement.innerHTML = currentDate.toLocaleTimeString();
+      }, 500);
     }
   };
   // Call the init function (method) from the app object
