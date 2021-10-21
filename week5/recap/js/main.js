@@ -7,9 +7,19 @@
       'playDay': 'Zaterdag'
     },
     {
+      'thumbnailUrl': 'https://assets.rockwerchter.be/files/cache/medium/files/metallica-artiest-60c85d0413a36.jpg',
+      'bandName': 'Metallica',
+      'playDay': 'Vrijdag'
+    },
+    {
       'thumbnailUrl': 'https://assets.rockwerchter.be/files/cache/medium/files/fnm-1500-60cc6b19a9efc.jpg',
       'bandName': 'Faith No More',
       'playDay': 'Zaterdag'
+    },
+    {
+      'thumbnailUrl': 'https://assets.rockwerchter.be/files/cache/medium/files/metallica-artiest-60c85d0413a36.jpg',
+      'bandName': 'Metallica',
+      'playDay': 'Vrijdag'
     }
   ];
   // Define the application
