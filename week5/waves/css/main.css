@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600&family=Teko:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.waves {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.wave {
+  background: hsla(360, 100%, 50%, 1);
+  width: 24px;
+  height: 24px;
+  margin: 2px;
+
+  transition: all 268ms ease-in-out 0s;
+}
+
+.wave:hover {
+  transform: scale(3) rotate(360deg) !important;
+}
+
+.tag {
+  font-family: 'Teko', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000;
+
+  transition: all 1262ms ease-out 0s;
+}
+
+.tag:hover {
+  transform: translateX(0px) !important;
+}
