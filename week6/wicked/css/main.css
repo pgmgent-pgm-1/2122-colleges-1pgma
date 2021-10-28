@@ -15,13 +15,20 @@ body {
 }
 
 .tag-cloud {
+  /* height: 100%; */
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.pressed-keys {
   height: 100%;
   width: 100%;
 
   overflow: hidden;
 }
 
-.tag {
+.tag, .key {
   font-family: 'Teko', sans-serif;
   font-size: 3rem;
   font-weight: 800;

@@ -29,6 +29,7 @@
     cacheElements () {
       console.log('2. Cache Elements.');
       this.$tagCloud = document.querySelector('.tag-cloud');
+      this.$pressedKeys = document.querySelector('.pressed-keys');
     },
     registerListeners () {
       console.log('2bis. Register Elements.');
@@ -48,11 +49,23 @@
           $tag.style.transform = `translateX(${Math.round(Math.random() * wW)}px) translateY(${Math.round(Math.random() * wH)}px)`;
         });
       });
+
+      document.addEventListener('keypress', (ev) => {
+        // Get dimension of tag-cloud element
+        const wH = this.$tagCloud.clientHeight - 200;
+        const wW = this.$tagCloud.clientWidth - 200;
+
+        const $key = document.createElement('div');
+        $key.classList.add('key');
+        $key.innerHTML = ev.key;
+        $key.style.transform = `translateX(${Math.round(Math.random() * wW)}px) translateY(${Math.round(Math.random() * wH)}px)`;
+        this.$pressedKeys.appendChild($key);
+      });
     },
     generateUI () {
       console.log('3. Generate User Interface.');
       // Generate UI for tags
-      this.$tagCloud.innerHTML = this.getHTMLStringForTags(tags);
+      // this.$tagCloud.innerHTML = this.getHTMLStringForTags(tags);
     },
     getHTMLStringForTags (tags) {
       const wH = this.$tagCloud.clientHeight - 200;
