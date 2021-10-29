@@ -10,7 +10,7 @@
       'lecturers': [
         {
           'firstName': 'Michael',
-          'lastName': 'Vanderpoorten'
+          'lastName': 'Vanderpoorten',
         },
         {
           'firstName': 'Philippe',
@@ -33,6 +33,19 @@
           'firstName': 'Mathieu',
           'lastName': 'Spillebeen'
         }
+      ]
+    },
+    {
+      'name': 'Computer Systems',
+      'learningLine': 'Applied Information Technology',
+      'studyPoints': 3,
+      'hoursPerWeek': 6,
+      'period': 1,
+      'lecturers': [
+        {
+          'firstName': 'Adriaan',
+          'lastName': 'Glibert'
+        },
       ]
     }
   ];
@@ -72,7 +85,7 @@
                   <h2>${lecturer.firstName} ${lecturer.lastName}</h2>
                 </div>`;
       }).join('');
-    }
+    },
   };
   app.init();
 })();
