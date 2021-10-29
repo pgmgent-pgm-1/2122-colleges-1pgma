@@ -65,7 +65,7 @@
     generateUI () {
       console.log('3. Generate User Interface.');
       // Generate UI for tags
-      // this.$tagCloud.innerHTML = this.getHTMLStringForTags(tags);
+      this.$tagCloud.innerHTML = this.getHTMLStringForTags(tags);
     },
     getHTMLStringForTags (tags) {
       const wH = this.$tagCloud.clientHeight - 200;
