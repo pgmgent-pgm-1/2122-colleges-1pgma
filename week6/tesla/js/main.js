@@ -15,7 +15,7 @@
         {
           'firstName': 'Philippe',
           'lastName': 'De Pauw - Waterschoot'
-        }
+        },
       ]
     },
     {
@@ -27,13 +27,13 @@
       'lecturers': [
         {
           'firstName': 'Evelien',
-          'lastName': 'Rutsaert'
+          'lastName': 'Rutsaert',
         },
         {
           'firstName': 'Mathieu',
-          'lastName': 'Spillebeen'
-        }
-      ]
+          'lastName': 'Spillebeen',
+        },
+      ],
     },
     {
       'name': 'Computer Systems',
@@ -44,10 +44,10 @@
       'lecturers': [
         {
           'firstName': 'Adriaan',
-          'lastName': 'Glibert'
+          'lastName': 'Glibert',
         },
-      ]
-    }
+      ],
+    },
   ];
 
   // Define the application
